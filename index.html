@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Under Construction</title>
+    <title>Empty Page</title>
     <style>
         /* General Styles */
         body {
@@ -15,79 +15,59 @@
             color: #333;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #003366;
+            background-image: url('images/graphviz4.svg'); /* Header image path */
+            background-size: cover;
+            background-position: center;
             color: #fff;
+            padding: 40px 20px; /* Padding for spacing */
             text-align: center;
-            padding: 40px 20px;
-            border-radius: 8px;
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 20px;
+            border-radius: 8px 8px 0 0;
+            height: 250px; /* Adjusted height */
+            display: flex;
+            align-items: center; /* Vertically center content */
+            justify-content: center; /* Horizontally center content */
         }
 
-        header h1 {
+        .header-caption {
+            background-color: rgba(0, 51, 102, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .header-caption h1 {
             font-size: 2.5em;
+            margin: 0 0 10px 0;
+        }
+
+        .header-caption p {
+            font-size: 1.2em;
             margin: 0;
         }
 
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-        }
-
-        .container {
-            text-align: center;
-            width: 100%;
-            max-width: 800px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        .container h2 {
-            font-size: 2em;
-            color: #003366;
-        }
-
-        .container p {
-            font-size: 1.2em;
-            color: #666;
-        }
-
         footer {
-            background-color: #003366;
+            background-color: #3498db;
             color: #fff;
             text-align: center;
             padding: 10px 20px;
             border-radius: 0 0 8px 8px;
-            width: 100%;
-            max-width: 800px;
-            margin-top: 20px;
-        }
-
-        footer p {
-            margin: 0;
+            margin-top: auto; /* Push footer to the bottom */
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Page Under Construction</h1>
-    <p>We are currently working on the content. Please check back later.</p>
+    <div class="header-caption">
+        <h1>Welcome to My Page</h1>
+        <p>Explore more about my work and projects.</p>
+    </div>
 </header>
-
-<div class="container">
-    <h2>Coming Soon</h2>
-    <p>We’re busy preparing exciting new content. Stay tuned for updates!</p>
-</div>
 
 <footer>
     <p>&copy; 2024 Bathsheba Darko. All rights reserved.</p>
